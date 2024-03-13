@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="gb.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5b4059d550.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <div id="navbar-container">
+      <nav id="navbar" class="glass-hard">
+        <div class="nav-home"><p>Home</p></div>
+        <div class="nav-about"><p>About Me</p></div>
+        <div class="nav-projects"><p>Projects</p></div>
+        <div class="nav-games"><p>Games & Simulations</p></div>
+      </nav>
+    </div>
+    <div class="i-container">
+      <a href="https://github.com/AhadAydin" target="_blank"
+        ><i class="i-git glass-hard fa-brands fa-github"></i
+      ></a>
+      <a href="https://bdb-games.itch.io/" target="_blank"
+        ><i class="i-itch glass-hard fa-brands fa-itch-io"></i
+      ></a>
+    </div>
+
+    <!--Gradient Background-->
+    <div class="gb-fixed-container">
+      <div class="gradient-bg">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="10"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                result="goo"
+              />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="gradients-container">
+          <div class="g1"></div>
+          <div class="g2"></div>
+          <div class="g3"></div>
+          <div class="g4"></div>
+          <div class="g5"></div>
+          <div class="interactive"></div>
+        </div>
+      </div>
+    </div>
+    <!--Image Display-->
+    <div class="outer-image-display-container">
+      <div class="image-display-container glass hidden">
+        <button class="exit glass-extra">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button class="left glass-extra">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="image-container">
+          <img
+            class="image-display-container-image"
+            src="https://placehold.co/400x400"
+            alt=""
+          />
+        </div>
+        <button class="right glass-extra">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!--Actual Code-->
+
+    <div id="header-container">
+      <div class="bottom-txt">
+        <div><h2>Hi</h2></div>
+        <div><h2>i'm</h2></div>
+        <div><h2>Ahad</h2></div>
+        <div><h2>,</h2></div>
+        <div><h2>I'm</h2></div>
+        <div><h2>a</h2></div>
+        <div><h2>computer</h2></div>
+        <div><h2>engineering</h2></div>
+        <div><h2>student</h2></div>
+        <div><h2>.</h2></div>
+        <div><h2>Welcome</h2></div>
+        <div><h2>to</h2></div>
+        <div><h2>my</h2></div>
+        <div><h2>self-made</h2></div>
+        <div><h2>portfolio</h2></div>
+        <div><h2>!</h2></div>
+      </div>
+      <div class="abs-container">
+        <h1>Welcome</h1>
+        <h1 class="invincible"></h1>
+      </div>
+    </div>
+    <div id="other-containers">
+      <div class="container-header"><h1>About Me</h1></div>
+      <div id="second-container" class="container">
+        <div class="inner-box glass">
+          <img src="./media/bdb.jpg" alt="BDB image" width="320" height="320" />
+          <div id="about-div">
+            <p>
+              I am a third grade computer engineering student with a strong
+              focus on game design, machine learning, and frontend development.
+              Additionally, I explore computer vision, graphic design, and
+              shaders, consistently enhancing my abilities in these domains. I
+              pride myself on being a quick learner, always eager to delve into
+              new subjects and apply my knowledge in creative projects.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-header"><h1>Projects</h1></div>
+      <div id="third-container" class="container">
+        <div class="outer-box glass">
+          <div class="inner-box">
+            <div class="multimage-container">
+              <img src="./media/gp-images/gp0.png" class="big" alt="ph" />
+              <img src="./media/gp-images/gp1.png" class="mi" alt="ph" />
+              <img src="./media/gp-images/gp3.png" class="mi" alt="ph" />
+              <img src="./media/gp-images/gp4.png" class="mi" alt="ph" />
+            </div>
+            <div class="inner-text">
+              <h2>Graph Generating And Partitioning Algorithms Comparisons</h2>
+              <span>
+                This project was a collaboration with two firends for the
+                Algorithm Analysis course. While we didn't create algorithms for
+                NP-hard problems, we thoroughly examined existing algorithms,
+                exploring how they function and comparing their performance. The
+                code primarily tests some graph creation algorithms from
+                the</span
+              >
+              <a
+                href="https://networkx.org/documentation/networkx-1.10/reference/generators.html"
+                target="_blank"
+                >NetworkX</a
+              >
+              <span
+                >library. Subsequently, it evaluates various graph partitioning
+                models from the</span
+              >
+              <a
+                href="https://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html#sphx-glr-auto-examples-cluster-plot-cluster-comparison-py"
+                target="_blank"
+                >Sklearn</a
+              >
+              <span
+                >library, showcasing their speed and effectiveness.
+                Additionally, we utilized Matplotlib to visually display model
+                comparisons.</span
+              >
+            </div>
+          </div>
+          <div class="inner-links">
+            <a
+              href="https://github.com/AhadAydin/Comparing-Graph-Partitioning-Algorithms"
+              target="_blank"
+              >Go to project link...</a
+            >
+            <div>
+              <span>Collaborators : </span>
+              <a href="https://github.com/duygukaradadas" target="_blank">
+                <i class="fa-brands fa-github"></i
+                ><span>duygukaradadas</span></a
+              >
+              <a href="https://github.com/sudenazimal" target="_blank">
+                <i class="fa-brands fa-github"></i><span>sudenazimal</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="outer-box glass">
+          <div class="inner-box">
+            <div>
+              <h2>An Educational Mobile App For Children</h2>
+              <p>
+                This project was developed with a classmate for the Android
+                Programming course by using Android Studio. The application is
+                designed to be educational and instructive for children aged
+                6-8. It encompasses lessons on directions, time, days of the
+                week, and similar topics. Additionally, there are memory and
+                grammar-enhancing games such as picture matching and word
+                recognition. To use the app, users need to create an account,
+                and we employed Firebase for account information, password
+                verification, and tracking earned XP values. The interface is
+                tailored to be dyslexia-friendly, considering color schemes and
+                fonts. This project provided us with significant opportunities
+                for improving our skills in database management and UI design.
+              </p>
+            </div>
+            <div class="multimage-container">
+              <img src="./media/ss0-1.png" class="big" alt="ph" />
+              <img src="./media/ss3.png" class="mi" alt="ph" />
+              <img src="./media/ss2.png" class="mi" alt="ph" />
+              <img src="./media/ss4.png" class="mi" alt="ph" />
+            </div>
+          </div>
+          <div class="inner-links">
+            <a
+              href="https://github.com/AhadAydin/Educational-App-For-Kids"
+              target="_blank"
+              >Go to project link...</a
+            >
+            <div>
+              <span>Collaborators : </span>
+              <a href="https://github.com/sudenazimal" target="_blank">
+                <i class="fa-brands fa-github"></i><span>sudenazimal</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="outer-box glass">
+          <div class="inner-box">
+            <div class="multimage-container">
+              <img src="./media/knn.gif" class="big" alt="ph" />
+            </div>
+            <div>
+              <h2>Movie Rating Predictor</h2>
+              <p>
+                This project, created in collaboration with the same group, was
+                developed for the Data Types and Algorithms course. Written in
+                C++, the code reads a dataset containing information on over
+                1,000,000 users, movies, and ratings. Using the k-nearest
+                neighbors method, it predicts the ratings users would give to
+                unrated movies. The program employs hashing to store these
+                predictions in a CSV file.
+              </p>
+            </div>
+          </div>
+          <div class="inner-links">
+            <a
+              href="https://github.com/AhadAydin/Movie-Rating-Predictor"
+              target="_blank"
+              >Go to project link...</a
+            >
+            <div>
+              <span>Collaborators : </span>
+              <a href="https://github.com/duygukaradadas" target="_blank">
+                <i class="fa-brands fa-github"></i
+                ><span>duygukaradadas</span></a
+              >
+              <a href="https://github.com/sudenazimal" target="_blank">
+                <i class="fa-brands fa-github"></i><span>sudenazimal</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="outer-box glass">
+          <div class="inner-box">
+            <div>
+              <h2>And Of Course This Web Portfolio</h2>
+              <p>
+                I initially learned frontend development to create this web
+                portfolio, and I found immense joy in generating frontend
+                projects. I will continue to enhance my skills in this field. I
+                incorporated more color transitions and glass-like text boxes on
+                the site, giving it a cleaner and simpler form. Although I built
+                this site using vanilla JavaScript due to its simplicity, I am
+                currently actively
+              </p>
+            </div>
+            <div class="multimage-container">
+              <img src="./media/site_ss.png" class="big" alt="ph" />
+            </div>
+          </div>
+          <div class="inner-links">
+            <a
+              href="https://github.com/AhadAydin/Movie-Rating-Predictor"
+              target="_blank"
+              >Go to project link...(DONT FORGET TO CHANGE THIS LINK)</a
+            >
+            <div></div>
+          </div>
+        </div>
+
+        <div class="container-sub-header"><h2>Mini Projects</h2></div>
+
+        <div class="outer-box mini glass">
+          <div class="inner-box">
+            <img src="./media/tcp.png" alt="ph" />
+            <div>
+              <p>
+                A Python project that facilitates file exchange over a local
+                area network using TCP.
+              </p>
+              <a
+                href="https://github.com/AhadAydin/Broadcasting-And-File-Sharing-With-Python"
+                target="_blank"
+                >Go to project link...</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="outer-box mini glass">
+          <div class="inner-box">
+            <img src="./media/marching.png" alt="ph" />
+            <div>
+              <p>Marching squares algorithm and visualizer, made with p5.js.</p>
+              <a
+                href="https://github.com/AhadAydin/Marching-Squares-Algorithm-Visualizer"
+                target="_blank"
+                >Go to project link...
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="outer-box mini glass">
+          <div class="inner-box">
+            <img src="./media/tictactoe.png" alt="ph" />
+            <div>
+              <p>
+                Playable Tic-Tac-Toe game with an AI opponent, made with p5.js.
+              </p>
+              <a
+                href="https://github.com/AhadAydin/TicTacToe-AI"
+                target="_blank"
+                >Go to project link...
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-header"><h1>Games & Simulations</h1></div>
+      <div id="fourth-container" class="container">
+        <div class="outer-box glass">
+          <div class="inner-box">
+            <div class="multimage-container" id="topdown-container">
+              <img src="./media/topdown/ss1.png" class="big" alt="ph" />
+              <img src="./media/topdown/ss2.png" class="mi" alt="ph" />
+              <img src="./media/topdown/ss4.png" class="mi" alt="ph" />
+              <img src="./media/topdown/ss3.png" class="mi" alt="ph" />
+              <img src="./media/topdown/ss5.png" class="mi" alt="ph" />
+            </div>
+            <div class="inner-text">
+              <h2>Topdown Chevalier's Unforgiving Mayhem</h2>
+              <p>
+                I developed this game using Unity in 2022. In this top-down view
+                game, our character casts spells with a magical flute to fend
+                off monsters trying to kill us. As monsters are defeated, XP is
+                earned, which can be used to select upgrades from an upgrade
+                screen, continuing the game loop. At certain XP intervals,
+                bosses appear, and with well-combined upgrades, these bosses can
+                be defeated within seconds. As the game progresses, more enemies
+                appear on the screen, leading to more XP gain.
+              </p>
+              <p>
+                This project allowed me to better understand Unity 2D, create 2D
+                assets, learn about state machines and C# interfaces. Similarly,
+                I learned to implement sound effects and musics in Unity.
+              </p>
+            </div>
+          </div>
+          <div class="inner-links">
+            <a href="https://bdb-games.itch.io/topdown-cum" target="_blank"
+              >Go to itch.io...</a
+            >
+          </div>
+        </div>
+        <div class="outer-box glass">
+          <div class="inner-box">
+            <div class="inner-text">
+              <h2>Procedural Terrain Generation & Grass Rendering</h2>
+              <p>
+                In 2023, I developed this simulation using Unity. Initially, it
+                generates chunked heightmaps using Perlin noise, then creates
+                meshes based on these heightmaps and colors them based on the
+                height of each point to produce a textured terrain. Continuously
+                monitoring the character's position, it loads only the
+                surrounding chunks and uses Level Of Detail (LOD) to decrease
+                the detail of distant chunks while loading water models.
+              </p>
+              <p>
+                Next, it randomly adds tree and rock models to the surrounding
+                and visible chunks based on the character's position. Then,
+                utilizing Unity's GPU Instancing feature, it renders millions of
+                grass instances directly on the GPU.
+              </p>
+              <p>
+                This project taught me Unity3D, mesh manipulation, texturing,
+                procedural world generation, GPU Instancing, and shaders.
+              </p>
+            </div>
+            <div class="multimage-container">
+              <img src="./media/procedural/ss1.png" class="big" alt="ph" />
+              <img src="./media/procedural/ss2.png" class="mi" alt="ph" />
+              <img src="./media/procedural/ss3.png" class="mi" alt="ph" />
+              <img src="./media/procedural/ss4.png" class="mi" alt="ph" />
+              <img src="./media/procedural/ss5.png" class="mi" alt="ph" />
+            </div>
+          </div>
+          <div class="inner-links">
+            <a>Sorry no links yet...</a>
+          </div>
+        </div>
+        <div class="outer-box glass">
+          <div class="inner-box">
+            <div class="multimage-container" id="topdown-container">
+              <img src="./media/idk/ss1.png" class="big" alt="ph" />
+              <img src="./media/idk/ss2.png" class="mi" alt="ph" />
+              <img src="./media/idk/ss3.png" class="mi" alt="ph" />
+              <img src="./media/idk/ss4.png" class="mi" alt="ph" />
+              <img src="./media/idk/ss5.png" class="mi" alt="ph" />
+            </div>
+            <div class="inner-text">
+              <h2>Nothing Island</h2>
+              <p>
+                In 2023, I developed this game where players assume the role of
+                a character stranded on the "Nothing Island". The reason behind
+                working on this rather simple game was to create its stylistic
+                appearance. I aimed to explore how 2D textures could be rendered
+                in a 3D environment and how various environmental effects could
+                be achieved using 2D textures. This experimentation led to the
+                creation of an intriguing visual style.
+              </p>
+            </div>
+          </div>
+          <div class="inner-links">
+            <a href="https://bdb-games.itch.io/hicbir-sey-adasi" target="_blank"
+              >Go to itch.io...</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer glass-hard">
+        <h2 class="footer-header">
+          The resources that I have used while making this site
+        </h2>
+        <a href="https://www.youtube.com/watch?v=3HRvb2tLqF4" target="_blank"
+          >https://www.youtube.com/watch?v=3HRvb2tLqF4</a
+        >
+        <a href="https://www.youtube.com/watch?v=Ml-B-W91gtw" target="_blank"
+          >https://www.youtube.com/watch?v=Ml-B-W91gtw</a
+        >
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="gb.js"></script>
+  </body>
+</html>
