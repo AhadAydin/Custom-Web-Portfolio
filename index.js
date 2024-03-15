@@ -38,6 +38,7 @@ const App = {
     navbar_hide: false,
     showing_img_index: 0,
     current_multimg_obj_index: 0,
+    oldScrollY: 0,
   },
 };
 
@@ -86,6 +87,12 @@ document.addEventListener("scroll", (event) => {
   } else {
     if (App.states.navbar_hide) App.$.nav_bar.style.top = -32 + "px";
     else App.$.nav_bar.style.top = 15 + "px";
+  }
+  if (screen.width <= 600) {
+    if (window.scrollY < App.states.oldScrollY) {
+      App.$.nav_bar.style.top = 15 + "px";
+    }
+    App.states.oldScrollY = window.scrollY;
   }
 });
 
