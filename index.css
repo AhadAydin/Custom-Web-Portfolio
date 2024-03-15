@@ -238,6 +238,9 @@ a {
     height: auto;
 
     padding: 2px;
+    div {
+      padding: 2px 8px;
+    }
   }
   .i-container {
     width: 100%;
@@ -245,7 +248,7 @@ a {
     bottom: 0%;
     flex-direction: row;
     justify-content: space-between;
-    padding: 8px;
+    padding: 18px 8px;
   }
   .outer-image-display-container {
     .image-display-container {
@@ -347,7 +350,7 @@ a {
 }
 @media screen and (max-width: 640px) {
   .abs-container h1 {
-    font-size: 5.4rem;
+    font-size: 4.6rem;
   }
   .bottom-txt div {
     font-size: 0.8rem;
@@ -497,9 +500,6 @@ a {
     .inner-text,
     .multimage-container {
       width: 100%;
-    }
-    .multimage-container {
-      width: 90%;
       .mi {
         width: 48%;
       }
