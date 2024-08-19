@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio Site ?</title>
+    <link rel="icon" type="image/x-icon" href="/media/bdb_icon.jpg">
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="stylesheet" type="text/css" href="gb.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -144,6 +145,91 @@
       </div>
       <div class="container-header"><h1>Projects</h1></div>
       <div id="third-container" class="container">
+        <div class="outer-box glass">
+          <div class="inner-box mobile-reverse">
+            <div class="multimage-container">
+              <img src="./media/rhp0.PNG" class="big" alt="ph" />
+              <img src="./media/rhp1.PNG" class="mi" alt="ph" />
+              <img src="./media/rhp2.PNG" class="mi" alt="ph" />
+              
+            </div>
+            <div class="inner-text">
+              <h2>Rental House Price Predictor</h2>
+              <span>
+                This project was a collaborative effort with a friend for our Data Mining course. We developed a Python code that scrapes rental apartment data in Istanbul from various real estate websites, storing the collected data in a CSV file. We used </span
+              >
+              <a
+                href="https://www.selenium.dev/"
+                target="_blank"
+                >Selenium</a
+              >
+              <span
+                >and</span
+              >
+              <a
+                href="https://developer.chrome.com/docs/chromedriver/downloads?hl=tr"
+                target="_blank"
+                >ChromeDriver</a
+              >
+              <span
+                > for data scraping. The code then processes over twenty features, organizing them for use in the model. It analyzes and predicts prices using various models such as </span
+              >
+              <a
+                href="https://scikit-learn.org/stable/supervised_learning.html"
+                target="_blank"
+                >ScikitLearn's</a
+              >
+              <span
+                > random forest and decision tree. During this process, we compare the prediction scores across models to identify the most effective one.</span
+              >
+            </div>
+          </div>
+          <div class="inner-links">
+            <a
+              href="https://github.com/AhadAydin/Rental-House-Price-Prediction"
+              target="_blank"
+              >Go to project link...</a
+            >
+            <div>
+              <span>Collaborators : </span>
+              <a href="https://github.com/C4MCI" target="_blank">
+                <i class="fa-brands fa-github"></i
+                ><span>C4MCI</span></a
+              >
+            </div>
+          </div>
+        </div>  
+        <div class="outer-box glass">
+          <div class="inner-box">
+            <div class="inner-text">
+              <h2>Traffic Sign Detector</h2>
+              <span>
+                I developed this project for a Computer Vision course. The Python code I wrote detects traffic signs in real time using traditional computer vision techniques instead of modern machine learning-based methods. It only uses the 
+              </span>
+              <a
+              href="https://opencv.org/"
+              target="_blank"
+              >openCV's cv2</a
+              >
+              <span>
+                library to accomplish this. First, it removes unnecessary colors from the image captured by the camera and then applies edge detection. After filtering the image, it performs feature extraction and uses template matching with predefined traffic sign images on the detected objects. While displaying the camera feed, the code draws boxes around the detected signs and labels them in real time.
+              </span>
+            </div>
+            <div class="multimage-container" id="mobile-app-multimage">
+              <img src="./media/tsd3.PNG" class="big" alt="ph" />
+              <img src="./media/tsd1.PNG" class="mi" alt="ph" />
+              <img src="./media/tsd2.PNG" class="mi" alt="ph" />
+              <img src="./media/tsd0.PNG" class="mi" alt="ph" />
+            </div>
+          </div>
+          <div class="inner-links">
+            <a
+              href="https://github.com/AhadAydin/Traffic-Sign-Detection"
+              target="_blank"
+              >Go to project link...</a
+            >
+          </div>
+        </div>
         <div class="outer-box glass">
           <div class="inner-box mobile-reverse">
             <div class="multimage-container">
