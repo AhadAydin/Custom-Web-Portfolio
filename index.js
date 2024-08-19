@@ -64,10 +64,10 @@ App.$.nav_about.addEventListener("click", (event) => {
   document.documentElement.scrollTop = window.innerHeight * 1.12;
 });
 App.$.nav_projects.addEventListener("click", (event) => {
-  document.documentElement.scrollTop = window.innerHeight * 2.16;
+  document.documentElement.scrollTop = window.innerHeight * 2.14;
 });
 App.$.nav_games.addEventListener("click", (event) => {
-  document.documentElement.scrollTop = window.innerHeight * 6.1;
+  document.documentElement.scrollTop = window.innerHeight * 7.9;
 });
 
 /* NAVBAR MOVEMENTS */
